@@ -124,33 +124,84 @@
 
 # print(list(range(0, 10)))
 # [0, 1, 2, 3......9]
-for num in range(10):
-    print(num)
-    print(num ** 2)
-    print(num ** 3)
-    print('#' * 20)
+# for num in range(10):
+#     print(num)
+#     print(num ** 2)
+#     print(num ** 3)
+#     print('#' * 20)
 
-for letter in 'python':
-    if letter == 't':
-        print('WE FOUND T')
-    print(letter)
-
-
-for name in ['Jack', 'Mary', 'Sarah', 'Simon']:
-    print(f'Hello {name}')
+# for letter in 'python':
+#     if letter == 't':
+#         print('WE FOUND T')
+#     print(letter)
 
 
-squares = []
+# for name in ['Jack', 'Mary', 'Sarah', 'Simon']:
+#     print(f'Hello {name}')
 
-for num in range(100):
-    squares.append(num ** 2)
 
-print(squares)
+# squares = []
 
-x = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# for num in range(100):
+#     squares.append(num ** 2)
 
-for num in x:
-    # x.append(num ** 2)
-    num = num ** 2
+# print(squares)
 
-print(x)
+# x = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+# for num in x:
+#     # x.append(num ** 2)
+#     num = num ** 2
+
+# print(x)
+
+
+# for num1 in range(10):                  # 10 times
+#     for num2 in range(10):              # 10 * 10 = 100 times
+#         for num3 in range(10):          # 10 * 10 * 10 = 1000 times
+#             print(num1, num2, num3)
+
+
+# x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 1]
+# y = [3, 4, 5, 6, 7, 8, 9, 1, 2]
+
+# for index in range(len(y)):  # range(0, len(x), 2)
+#     print(x[index] + y[index])
+
+
+
+# while True:
+#     print('I can\'t stop!')
+
+
+# x = 0
+# while x > 100:
+#     print(x)
+#     x += 1
+
+# print(x)  # 100
+
+# while True:
+#     idcode = input("Enter Estonian national ID: ")
+#     if len(idcode) == 11:
+#         print("ID", idcode)
+#         break
+#     elif len(idcode) > 11:
+#         print("ID is too long")
+#         continue
+#     else:
+#         print("ID is too short")
+#         continue
+
+#     print("FINALLY")
+
+
+# condition = True
+
+# while condition:
+#     condition = False
+#     print('Hello')
+#     print('Something happens')
+#     print('Ending')
+    
+#     print('Finally')
