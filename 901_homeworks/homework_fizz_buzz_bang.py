@@ -10,3 +10,18 @@
 # or divisible by 3, 5 and 7 -> print number and combination FIZZBUZZBANG
 # Otherwise skip to next number
 # All combinations must be covered
+
+def fizz_buzz_bang(start, end):
+
+    for num in range(start, end + 1):
+        word = ''
+        if num % 3 == 0:
+            word += 'FIZZ'
+        if num % 5 == 0:
+            word += 'BUZZ'
+        if num % 7 == 0:
+            word += 'BANG'
+        if word:
+            print(num, word)
+
+fizz_buzz_bang(1, 200)
