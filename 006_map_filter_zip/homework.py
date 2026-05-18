@@ -1,3 +1,5 @@
+import math
+
 """
 Task:
 You have two lists: one containing names of students and another containing their corresponding scores.
@@ -6,6 +8,8 @@ Create a dictionary where the names are the keys and the scores are the values u
 
 students = ["Alice", "Bob", "Charlie", "David"]
 scores = [85, 92, 78, 88]
+zipped = zip(students, scores)
+print(dict(zipped))
 
 '''
 Task:
@@ -15,6 +19,8 @@ Use map() to perform the conversion.
 
 usd_prices = [100, 150, 200, 250, 300]
 conversion_rate = 0.85
+converted = map(lambda price: price * conversion_rate, usd_prices)
+print(list(converted))
 
 '''
 Task:
@@ -22,7 +28,8 @@ You have a list of ages. Use filter() to create a new list containing only the a
 '''
 
 ages = [12, 17, 19, 24, 15, 30, 16, 18]
-
+adults = list(filter(lambda age: age >= 18, ages))
+print(adults)
 
 '''
 Task:
@@ -36,6 +43,8 @@ products = {
     "Headphones": 200
 }
 
+new_products = {key: round(value * 1.1, 2) for key, value in products.items()}
+print(new_products)
 
 '''
 Task:
@@ -45,3 +54,6 @@ You have a list of numbers.
 '''
 
 numbers = [3, 5, 7, 9, 11]
+squares = [num ** 2 for num in numbers]
+greatest = filter(lambda num: num > 50, squares)
+print(list(greatest))

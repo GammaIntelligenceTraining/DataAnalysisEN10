@@ -1,3 +1,5 @@
+# https://docs.python.org/3/library/datetime.html
+
 import datetime
 from zoneinfo import ZoneInfo  # Python 3.9+
 
