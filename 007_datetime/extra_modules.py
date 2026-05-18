@@ -45,6 +45,11 @@ print(f"Is {year_to_check} a leap year? {is_leap}")
 leap_count = calendar.leapdays(2000, 2026)
 print(f"Leap years between 2000 and 2026: {leap_count}")
 
+# monthrange: Returns (first_day_weekday, number_of_days_in_month)
+# Useful for iterating through all days of a month
+first_day, num_days = calendar.monthrange(2026, 5)
+print(f"May 2026 starts on weekday {first_day} and has {num_days} days.")
+
 # Finding the weekday of a specific date
 # 0 = Monday, 1 = Tuesday, ..., 6 = Sunday
 day_idx = calendar.weekday(2026, 5, 18)

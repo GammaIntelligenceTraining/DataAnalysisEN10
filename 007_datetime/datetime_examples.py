@@ -165,6 +165,7 @@ print(f"Business days between {start} and {end}: {count_business_days(start, end
 
 
 # --- Use Case C: Finding "Next Friday" ---
+# Weekday indexes: 0=Mon, 1=Tue, 2=Wed, 3=Thu, 4=Fri, 5=Sat, 6=Sun
 def get_next_weekday(start_dt, weekday_idx):
     # weekday_idx: 0=Mon, 1=Tue, ..., 4=Fri, etc.
     days_ahead = weekday_idx - start_dt.weekday()
@@ -173,5 +174,6 @@ def get_next_weekday(start_dt, weekday_idx):
     return start_dt + datetime.timedelta(days=days_ahead)
 
 today_dt = datetime.datetime.now()
+print(f"Today is weekday index: {today_dt.weekday()}")
 next_friday = get_next_weekday(today_dt, 4)
 print(f"Next Friday will be: {next_friday.strftime('%Y-%m-%d')}")
